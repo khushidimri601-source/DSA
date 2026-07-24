@@ -9,7 +9,7 @@ public:
         }
         unordered_set<int>s2;
         for(int i:s1){
-            for(int &j:nums)
+            for(int j:nums)
             s2.insert(i^j);
         }
         return s2.size();
